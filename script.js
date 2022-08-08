@@ -1,49 +1,64 @@
-//Sample
+//Person class to handle details of Person
 
-class People {
+class Person   {
 
-    constructor(name,age,gender){
+     constructor(name,age,gender,_address){
 
-        setName (name);
-        setAge (age);
-        setGender(gender);
+       this.setName=name;
+        this.setAge=age;
+        this.setGender=gender;   
+        this._address=_address;      
 
-    }
+    } 
 
-     function setAge (age) {
+    //Getter and Setter to initialize tha value 
+
+     set setAge (age) {
 
         this.age=age;
     }
 
-    setName (name) {
+     set setName (name) {
 
         this.name=name;
     }
-
-    setGender (gender) {
+    
+    set  setGender (gender) {
 
         this.gender=gender;
     }
+    
+    set  setAddress (_address) {
 
-    getName() {
+        this._address=_address;
+    }
+///Getter methods to retrive values
+    get getName() {
         return this.name;
     }
 
-    getAge() {
+    get getAge() {
         return this.age;
     }
 
-    getGender() {
+    get getGender() {
         return this.gender;
     }
 
+    get getAddress(){
+        return this._address;
+    }
+
+
 }
 
-let p1 = new People("shiva",27,"male");
+//Object creation for the class
 
-console.log(p1.getName());
+let person1 = new Person("shiva",27,"male",{"doorno":237,"street":"1st street","city":"chennai"});
 
+let person2 = new Person("mani",27,"male",{"doorno":2,"street":"1st street","city":"chennai"});
 
+console.log(person1.getName);
 
 
 
