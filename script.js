@@ -58,7 +58,8 @@ let person1 = new Person("shiva",27,"male",{"doorno":237,"street":"1st street","
 
 let person2 = new Person("mani",27,"male",{"doorno":2,"street":"1st street","city":"chennai"});
 
-console.log(person1.getName);
+console.log(`Name:${person1.getName} lives in city:${person1
+.getAddress.city}`);
 
 
 
